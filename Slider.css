@@ -1,0 +1,77 @@
+
+.owl-carousel .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+}
+
+.project-pic {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 5px solid rgb(110, 87, 224); /* Use rgb(110, 87, 224) here */
+}
+
+.project-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+p.description {
+    margin: 0 0 10px;
+    color: #777;
+    position: relative;
+}
+
+.more-text {
+    display: none;
+}
+
+.read-more {
+    color: rgb(110, 87, 224); /* Use rgb(110, 87, 224) here */
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.buttons {
+    margin: 15px 0 0;
+}
+
+.buttons a {
+    display: inline-block;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background 0.3s;
+    text-decoration: none;
+    color: white;
+    background: rgb(110, 87, 224); /* Use rgb(110, 87, 224) here */
+}
+
+.buttons a:first-child:hover {
+    background: #4a148c;
+}
+
+.buttons a:last-child {
+    background: #fff;
+    color: rgb(110, 87, 224); /* Use rgb(110, 87, 224) here */
+    border: 2px solid rgb(110, 87, 224); /* Use rgb(110, 87, 224) here */
+}
+
+.buttons a:last-child:hover {
+    background: #f3e5f5;
+}

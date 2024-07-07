@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://icons8.com/icon/CnMERoGbE2S2/resume-website"
+      type="image/x-icon"
+    />
+    <link rel="icon" type="image/png" href="images/download1.jpeg" />
+    <!-- --------- UNICONS ---------- -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="Slider.css" />
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="2.jpg" type="image/x-icon" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+          <h1 class="nav-name">Shekhar Patil</h1>
+          <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="#home" class="nav-link">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#about" class="nav-link">About</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#projects" class="nav-link">Projects</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+      <!-- -------------- MAIN ---------------- -->
+      <main class="wrapper">
+        <!-- -------------- FEATURED BOX ---------------- -->
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card"></div>
+            <div class="featured-name">
+              <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+              <p>Software Engineer</p>
+            </div>
+            <div class="featured-text-btn">
+              <button class="btn blue-btn">Hire Me</button>
+              <a
+                href="https://drive.google.com/file/d/1Oj6WOyhswVA5nGTssoKAJocfj0o1EwLf/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button class="btn">
+                  Download CV <i class="uil uil-file-alt"></i></button
+              ></a>
+            </div>
+            <div class="social_icons">
+              <div class="icon">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/shekhar-patil-634918236/"
+                  ><i class="uil uil-linkedin-alt"></i
+                ></a>
+              </div>
+              <div class="icon">
+                <a target="_blank" href="https://github.com/Shekharp-45"
+                  ><i class="uil uil-github-alt"></i
+                ></a>
+              </div>
+              <div class="icon">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/shekharpatil_45/?hl=en"
+                  ><i class="uil uil-instagram-alt"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+              <img src="images/profile-pic.png" width="200" alt="avatar" />
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+              <i class="uil uil-mouse-alt"></i>
+              <p>Scroll Down</p>
+            </a>
+          </div>
+        </section>
+        <!-- -------------- ABOUT BOX ---------------- -->
+        <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="about-info">
+                <h3>My introduction</h3>
+                <p>
+                  Hello, I'm Shekhar Patil, a Software Engineer from Solapur,
+                  Maharashtra. With a Bachelor's degree in Computer Science
+                  Engineering, I excel in full-stack development, C/C++, Java,
+                  and JavaScript. I have strong problem-solving skills,
+                  achieving Institute Rank on platforms like Leetcode and
+                  GeeksForGeeks.
+                </p>
+                <div class="about-btn">
+                  <a
+                    href="https://drive.google.com/file/d/1Oj6WOyhswVA5nGTssoKAJocfj0o1EwLf/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button class="btn">
+                      Download CV <i class="uil uil-file-alt"></i></button
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Frontend</h3>
+                </div>
+                <div class="skills-list">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                  <span>Tailwind CSS</span>
+                  <span>JavaScript</span>
+                  <span>ReactJS</span>
+                </div>
+              </div>
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Backend</h3>
+                </div>
+                <div class="skills-list">
+                  <span>NodeJS</span>
+                  <span>ExpressJS</span>
+                  <span>MongoDB</span>
+                  <span>MySQL</span>
+                </div>
+              </div>
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Version Control</h3>
+                </div>
+                <div class="skills-list">
+                  <span>Git</span>
+                  <span>GitHub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- -------------- PROJECT SECTION ---------------- -->
+
+        <section class="section" id="projects">
+          <div class="top-header">
+            <h1>Projects</h1>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="card">
+              <div class="project-pic">
+                <img src="images/Expense.png" alt="Project Image" />
+              </div>
+              <h2>Expense Trcker</h2>
+              <p class="description">
+                Created a Responsive Expense Tracker Website that keeps<span
+                  class="more-text"
+                >
+                  a record of your Expenditure, and has a Search Functionality.
+                  This responsive project efficiently tracks per sonal and
+                  business expenses, ensuring com patibility across
+                  devices.</span
+                >
+                <a href="#" class="read-more">Read More</a>
+              </p>
+              <div class="buttons">
+                <a
+                  href="https://exptracker-hp1rthtl3-shekhar-patils-projects.vercel.app/"
+                  target="_blank"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/Shekharp-45/Expense-Tracker"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <div class="project-pic">
+                <img src="images/chat1.png" alt="Project Image" />
+              </div>
+              <h2>ConnectU</h2>
+              <p class="description">
+                Developed a real-time chat app with robust features: secure
+                <span class="more-text">
+                  login/register, encrypted chat storage, personalized avatar
+                  creation, and emoji integration. Enhances user engagement and
+                  interaction, ensuring seamless communication across de vices.
+                  It enables instant messaging without the need for manual
+                  refresh..</span
+                >
+                <a href="#" class="read-more">Read More</a>
+              </p>
+              <div class="buttons">
+                <a
+                  href="https://imp-note-ftbjuemc1-shekhar-patils-projects.vercel.app/"
+                  target="_blank"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/Shekharp-45/ConnectU"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <div class="project-pic">
+                <img src="images/Ecomm.png" alt="Project Image" />
+              </div>
+              <h2>Multiverse Market</h2>
+              <p class="description">
+                Oure-commerce application includes role based access
+                <span class="more-text">
+                  control, order fulfillment, secure product management, and
+                  efficient customer engagement. Integrated payment gateways,
+                  user authenti cation, and security protocols to ensure safe
+                  and secure transactions and protect against data
+                  breaches.</span
+                >
+                <a href="#" class="read-more">Read More</a>
+              </p>
+              <div class="buttons">
+                <a
+                  href="https://imp-note-ftbjuemc1-shekhar-patils-projects.vercel.app/"
+                  target="_blank"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/Shekharp-45/Multiverse-Market"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <div class="project-pic">
+                <img src="images/Restaurant.png" alt="Project Image" />
+              </div>
+              <h2>Restaurant Website</h2>
+              <p class="description">
+                Designed and developed a visually appealing and info<span
+                  class="more-text"
+                  >rmative restaurant website showcas ing detailed menus.
+                  Implemented a scalable navigation bar that expands to
+                  accommodate additional menu categories.</span
+                >
+                <a href="#" class="read-more">Read More</a>
+              </p>
+              <div class="buttons">
+                <a
+                  href="https://resturant-1e4mrs5xx-shekhar-patils-projects.vercel.app/"
+                  target="_blank"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/Shekharp-45/Reastaurant-App"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <div class="project-pic">
+                <img src="images/TicTacToe.png" alt="Project Image" />
+              </div>
+              <h2>TicTacToe Game</h2>
+              <p class="description">
+                reated a game in which two players seek in alternate
+                <span class="more-text">
+                  turns to complete a row, a column, or a diagonal with either
+                  three O's or three X's drawn in the spaces of a grid of nine
+                  squares; noughts and crosses.</span
+                >
+                <a href="#" class="read-more">Read More</a>
+              </p>
+              <div class="buttons">
+                <a
+                  href="https://tic-tac-72rtxf6yy-shekhar-patils-projects.vercel.app/"
+                  target="_blank"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/Shekharp-45/tic-tac-toe"
+                  target="_blank"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- -------------- CONTACT BOX ---------------- -->
+
+        <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind? Contact me here</span>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="contact-info">
+                <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                <p>
+                  <i class="uil uil-envelope"></i> Email:
+                  shekharpatil2025@gmail.com
+                </p>
+                <p><i class="uil uil-phone"></i> Tel: +91-9325008581</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-control">
+                <form id="contactForm" action="/post" method="post">
+                    <div class="form-inputs">
+                      <input type="text" id="name" name="name" class="input-field" placeholder="Name" required />
+                      <input type="text" id="email" name="email" class="input-field" placeholder="Email" required />
+                    </div>
+                    <div class="text-area">
+                      <textarea id="message" name="message" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="form-button">
+                      <button class="btn" type="submit">
+                        Send <i class="uil uil-message"></i>
+                      </button>
+                    </div>
+                  </form>
+                  <div id="formResponse"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- --------------- FOOTER --------------- -->
+      <footer>
+        <div class="top-footer">
+          <p>Shekhar Patil.</p>
+        </div>
+        <div class="middle-footer">
+          <ul class="footer-menu">
+            <li class="footer_menu_list">
+              <a href="#home">Home</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#about">About</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <div class="icon">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/shekhar-patil-634918236/"
+              ><i class="uil uil-linkedin-alt"></i
+            ></a>
+          </div>
+          <div class="icon">
+            <a target="_blank" href="https://github.com/Shekharp-45"
+              ><i class="uil uil-github-alt"></i
+            ></a>
+          </div>
+          <div class="icon">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/shekharpatil_45/?hl=en"
+              ><i class="uil uil-instagram-alt"></i
+            ></a>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <p>&copy; 2024 All rights reserved | Shekhar Patil</p>
+        </div>
+      </footer>
+    </div>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Script.js"></script>
+    <script src="SliderScript.js"></script>
+    <script>
+        $(document).ready(function() {
+          $('#contactForm').on('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+        
+            // Gather form data
+            var formData = {
+              name: $('#name').val(),
+              email: $('#email').val(),
+              message: $('#message').val()
+            };
+        
+            $.ajax({
+              type: 'POST',
+              url: '/post',
+              data: formData,
+              success: function(response) {
+                $('#formResponse').html('<p>Successfully Submitted!</p>');
+                $('#contactForm')[0].reset(); // Clear the form
+              },
+              error: function(error) {
+                $('#formResponse').html('<p>An error occurred. Please try again.</p>');
+              }
+            });
+          });
+        });
+        </script>        
+  </body>
+</html>
