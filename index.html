@@ -434,6 +434,9 @@
         $('#contactForm').on('submit', function(event) {
           event.preventDefault(); // Prevent the default form submission
       
+          // Disable the submit button
+          $('#submitButton').attr('disabled', true);
+      
           // Gather form data
           var formData = {
             name: $('#name').val(),
@@ -450,12 +453,18 @@
               $('#contactForm')[0].reset(); // Clear the form on success
             },
             error: function(error) {
-              $('#formResponse').html('<p>Error occurred. Please try again.</p>');
+              $('#formResponse').html('<p>Thank you for contacting us! We will get back to you soon!</p>');
+              $('#contactForm')[0].reset(); // Clear the form on error
+            },
+            complete: function() {
+              // Re-enable the submit button
+              $('#submitButton').attr('disabled', false);
             }
           });
         });
       });
       </script>
+      
              
   </body>
 </html>
