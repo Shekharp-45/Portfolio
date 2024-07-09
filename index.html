@@ -430,31 +430,32 @@
     <script src="Script.js"></script>
     <script src="SliderScript.js"></script>
     <script>
-        $(document).ready(function() {
-          $('#contactForm').on('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-        
-            // Gather form data
-            var formData = {
-              name: $('#name').val(),
-              email: $('#email').val(),
-              message: $('#message').val()
-            };
-        
-            $.ajax({
-              type: 'POST',
-              url: '/post',
-              data: formData,
-              success: function(response) {
-                $('#formResponse').html('<p>Successfully Submitted!</p>');
-                $('#contactForm')[0].reset(); // Clear the form
-              },
-              error: function(error) {
-                $('#formResponse').html('<p>Thank you for Contacting Me.</p>');
-              }
-            });
+      $(document).ready(function() {
+        $('#contactForm').on('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+      
+          // Gather form data
+          var formData = {
+            name: $('#name').val(),
+            email: $('#email').val(),
+            message: $('#message').val()
+          };
+      
+          $.ajax({
+            type: 'POST',
+            url: '/post',
+            data: formData,
+            success: function(response) {
+              $('#formResponse').html('<p>Successfully Submitted!</p>');
+              $('#contactForm')[0].reset(); // Clear the form on success
+            },
+            error: function(error) {
+              $('#formResponse').html('<p>Error occurred. Please try again.</p>');
+            }
           });
         });
-        </script>        
+      });
+      </script>
+             
   </body>
 </html>
