@@ -12,12 +12,21 @@
     <!-- --------- TYPED.JS ---------- -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- --------- UNICONS ---------- -->
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-  <!-- --------- CSS ---------- -->
-  <link rel="stylesheet" href="Style.css" />
-  <link rel="stylesheet" href="Slider.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="Slider.css" />
 
     <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" href="2.jpg" type="image/x-icon" />
@@ -71,9 +80,10 @@
               <p>Software Engineer</p>
             </div>
             <div class="featured-text-btn">
-              <a href="mailto:shekharpatil2025@gmail.com" target="_blank"><button class="btn blue-btn">Hire Me</button></a>
+              <a href="mailto:shekharpatil2025@gmail.com" target="_blank"
+                ><button class="btn blue-btn">Hire Me</button></a
+              >
 
-              
               <a
                 href="https://drive.google.com/file/d/1Oj6WOyhswVA5nGTssoKAJocfj0o1EwLf/view?usp=sharing"
                 target="_blank"
@@ -356,20 +366,39 @@
             <div class="col">
               <div class="form-control">
                 <form id="contactForm" action="/post" method="post">
-                    <div class="form-inputs">
-                      <input type="text" id="name" name="name" class="input-field" placeholder="Name" required />
-                      <input type="text" id="email" name="email" class="input-field" placeholder="Email" required />
-                    </div>
-                    <div class="text-area">
-                      <textarea id="message" name="message" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="form-button">
-                      <button class="btn" type="submit">
-                        Send <i class="uil uil-message"></i>
-                      </button>
-                    </div>
-                  </form>
-                  <div id="formResponse"></div>
+                  <div class="form-inputs">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="input-field"
+                      placeholder="Name"
+                      required
+                    />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="input-field"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="text-area">
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="form-button">
+                    <button class="btn" type="submit">
+                      Send <i class="uil uil-message"></i>
+                    </button>
+                  </div>
+                </form>
+                <div id="formResponse"></div>
               </div>
             </div>
           </div>
@@ -424,47 +453,47 @@
       </footer>
     </div>
     <!-- Include jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Include Owl Carousel JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="Script.js"></script>
     <script src="SliderScript.js"></script>
     <script>
-      $(document).ready(function() {
-        $('#contactForm').on('submit', function(event) {
+      $(document).ready(function () {
+        $("#contactForm").on("submit", function (event) {
           event.preventDefault(); // Prevent the default form submission
-      
+
           // Disable the submit button
-          $('#submitButton').attr('disabled', true);
-      
+          $("#submitButton").attr("disabled", true);
+
           // Gather form data
           var formData = {
-            name: $('#name').val(),
-            email: $('#email').val(),
-            message: $('#message').val()
+            name: $("#name").val(),
+            email: $("#email").val(),
+            message: $("#message").val(),
           };
-      
+
           $.ajax({
-            type: 'POST',
-            url: '/post',
+            type: "POST",
+            url: "/post",
             data: formData,
-            success: function(response) {
-              $('#formResponse').html('<p>Successfully Submitted!</p>');
-              $('#contactForm')[0].reset(); // Clear the form on success
+            success: function (response) {
+              $("#formResponse").html("<p>Successfully Submitted!</p>");
+              $("#contactForm")[0].reset(); // Clear the form on success
             },
-            error: function(error) {
-              $('#formResponse').html('<p>Thank you for contacting us! We will get back to you soon!</p>');
-              $('#contactForm')[0].reset(); // Clear the form on error
+            error: function (error) {
+              $("#formResponse").html(
+                "<p>Thank you for contacting us! We will get back to you soon!</p>"
+              );
+              $("#contactForm")[0].reset(); // Clear the form on error
             },
-            complete: function() {
+            complete: function () {
               // Re-enable the submit button
-              $('#submitButton').attr('disabled', false);
-            }
+              $("#submitButton").attr("disabled", false);
+            },
           });
         });
       });
-      </script>
-      
-             
+    </script>
   </body>
 </html>
