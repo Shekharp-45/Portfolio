@@ -15,4 +15,13 @@ let options = {
       navMenu.className = "nav-menu";
     }
   }
+  const images = document.querySelectorAll('.project-pic img');
+images.forEach(img => {
+    img.addEventListener('click', () => {
+        const modal = document.querySelector('.modal');
+        modal.style.display = 'block';
+        modal.querySelector('img').src = img.src;
+    });
+});
+
   

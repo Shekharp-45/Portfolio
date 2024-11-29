@@ -362,6 +362,45 @@ h3{
 
 /* ----- PROJECTS BOX ----- */
 
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-pic img {
+    transition: transform 0.3s ease;
+}
+.project-pic img:hover {
+    transform: scale(1.1);
+}
+.more-text {
+    display: none;
+}
+.read-more:hover + .more-text {
+    display: inline;
+    animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.buttons a {
+    background-color: #6200ea;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.buttons a:hover {
+    background-color: #3700b3;
+}
+.card {
+    background: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 100%);
+    border-radius: 10px;
+    overflow: hidden;
+}
 
 
 /* ----- CONTACT BOX ----- */
